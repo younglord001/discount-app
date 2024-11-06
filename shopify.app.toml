@@ -3,7 +3,7 @@
 client_id = "c811c8613ea7d0c918fd4912415198a8"
 name = "discount app gmr"
 handle = "discount-app-gmr"
-application_url = "https://preparation-took-local-perth.trycloudflare.com"
+application_url = "https://gap-offerings-elected-rhode.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_customers,read_discounts,read_products,write_discounts"
 
 [auth]
 redirect_urls = [
-  "https://preparation-took-local-perth.trycloudflare.com/auth/callback",
-  "https://preparation-took-local-perth.trycloudflare.com/auth/shopify/callback",
-  "https://preparation-took-local-perth.trycloudflare.com/api/auth/callback"
+  "https://gap-offerings-elected-rhode.trycloudflare.com/auth/callback",
+  "https://gap-offerings-elected-rhode.trycloudflare.com/auth/shopify/callback",
+  "https://gap-offerings-elected-rhode.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
