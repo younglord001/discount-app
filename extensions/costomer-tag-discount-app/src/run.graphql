@@ -20,7 +20,7 @@ query RunInput($discountTags: [String!]!) {
   }
   discountNode {
     metafield(
-      namespace: "$app:discount-via-customer-tag"
+      namespace: "$app:customer-tag-discount"
       key: "function-configuration"
     ) {
       value
