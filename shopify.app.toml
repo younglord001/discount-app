@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "c811c8613ea7d0c918fd4912415198a8"
+name = "discount app gmr"
+handle = "discount-app-gmr"
+application_url = "https://happy-grad-cable-devel.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "testestesting.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_discounts,read_products,write_discounts"
+
+[auth]
+redirect_urls = [
+  "https://happy-grad-cable-devel.trycloudflare.com/auth/callback",
+  "https://happy-grad-cable-devel.trycloudflare.com/auth/shopify/callback",
+  "https://happy-grad-cable-devel.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[pos]
+embedded = false

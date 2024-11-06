@@ -1,0 +1,51 @@
+
+query RunInput($discountTags: [String!]!) {
+  cart {
+    buyerIdentity {
+      customer {
+        hasAnyTag(tags: $discountTags)
+      }
+    }
+    lines {
+      merchandise {
+        ... on ProductVariant {
+          id
+          product {
+            id
+          }
+        }
+        __typename
+      }
+    }
+  }
+  discountNode {
+    metafield(
+      namespace: "$app:discount-via-customer-tag"
+      key: "function-configuration"
+    ) {
+      value
+    }
+  }
+}
+
+
+# query RunInput {
+#   cart {
+#     buyerIdentity {
+#       customer {
+#         hasAnyTag(tags: ["Loyal", "VIP"])
+#       }
+#     }
+#     lines {
+#       merchandise {
+#         ... on ProductVariant {
+#           id
+#           product {
+#             id
+#           }
+#         }
+#         __typename
+#       }
+#     }
+#   }
+# }
