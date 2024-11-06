@@ -22,5 +22,5 @@ description = "t:description"
 
 
   [extensions.input.variables]
-  namespace = "$app:discount-via-customer-tag"
+  namespace = "$app:customer-tag-discount"
   key = "function-configuration"

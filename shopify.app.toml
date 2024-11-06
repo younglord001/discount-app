@@ -3,7 +3,7 @@
 client_id = "c811c8613ea7d0c918fd4912415198a8"
 name = "discount app gmr"
 handle = "discount-app-gmr"
-application_url = "https://happy-grad-cable-devel.trycloudflare.com"
+application_url = "https://superintendent-novelty-instrumentation-bone.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "read_customers,read_discounts,read_products,write_discounts"
 
 [auth]
 redirect_urls = [
-  "https://happy-grad-cable-devel.trycloudflare.com/auth/callback",
-  "https://happy-grad-cable-devel.trycloudflare.com/auth/shopify/callback",
-  "https://happy-grad-cable-devel.trycloudflare.com/api/auth/callback"
+  "https://superintendent-novelty-instrumentation-bone.trycloudflare.com/auth/callback",
+  "https://superintendent-novelty-instrumentation-bone.trycloudflare.com/auth/shopify/callback",
+  "https://superintendent-novelty-instrumentation-bone.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
